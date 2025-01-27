@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zvíře - Domovská stránka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vítejte na stránce o zvířatech!</h1>
+        <nav>
+            <ul>
+                <li><a href="#domov">Domů</a></li>
+                <li><a href="#zvirata">Zvířata</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="domov">
+        <h2>Domovská stránka</h2>
+        <p>Na této stránce se dozvíte zajímavé informace o různých druzích zvířat. Podívejte se na naši nabídku!</p>
+    </section>
+
+    <section id="zvirata">
+        <h2>Naše zvířata</h2>
+        <div class="zvire">
+            <h3>Lev</h3>
+            <img src="lev.jpg" alt="Lev" width="300">
+            <p>Lev je známý jako král zvířat a žije převážně v Africe.</p>
+        </div>
+        <div class="zvire">
+            <h3>Slon</h3>
+            <img src="slon.jpg" alt="Slon" width="300">
+            <p>Slon je největší suchozemské zvíře a je známý svou inteligencí a pamětí.</p>
+        </div>
+        <div class="zvire">
+            <h3>Kočka</h3>
+            <img src="kocka.jpg" alt="Kočka" width="300">
+            <p>Kočka je oblíbeným domácím mazlíčkem a je známá svou nezávislostí.</p>
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Pokud máte otázky nebo chcete vědět více, neváhejte nás kontaktovat.</p>
+        <form action="#">
+            <label for="jmeno">Vaše jméno:</label>
+            <input type="text" id="jmeno" name="jmeno">
+            <label for="zprava">Vaše zpráva:</label>
+            <textarea id="zprava" name="zprava"></textarea>
+            <button type="submit">Odeslat</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Zvířata, Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
