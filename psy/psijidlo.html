@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psi a Jídlo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcc00;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: lighter;
+        }
+
+        .content {
+            padding: 40px 20px;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .gallery div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery div:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery div:hover .caption {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            color: white;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Psi a Jídlo</h1>
+    <p>Prohlédněte si naše psy, kteří si užívají svá oblíbená jídla</p>
+</header>
+
+<div class="content">
+    <h2>Oblíbené jídlo pro psy</h2>
+    <p>Každý pes má rád jiné jídlo, ale existují některé oblíbené druhy, které jsou pro psy skvělé. Některé psy milují čerstvé maso, jiné zase suché granule. Ať už jde o psí pamlsky nebo hlavní jídlo, vždy je důležité zajistit, aby bylo jídlo vyvážené a zdravé.</p>
+    <p>Zde jsou obrázky psů, kteří si užívají své oblíbené jídlo!</p>
+</div>
+
+<div class="gallery">
+    <div>
+        <img src="https://www.akc.org/wp-content/uploads/2020/11/GettyImages-949693356-1.jpg" alt="Pes jí jablko">
+        <div class="caption">Pes jí jablko</div>
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/originals/a7/64/1e/a7641e9f3605242de2d20f9d9515e3e9.jpg" alt="Pes jí misku s granulemi">
+        <div class="caption">Pes jí granule</div>
+    </div>
+    <div>
+        <img src="https://www.thevet.co.uk/wp-content/uploads/2021/05/8-healthy-foods-for-dogs-header-1024x682.jpg" alt="Pes jí čerstvé maso">
+        <div class="caption">Pes jí čerstvé maso</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Psi a Jídlo. Všechna práva vyhrazena.</p>
+</footer>
+
+</body>
+</html>
