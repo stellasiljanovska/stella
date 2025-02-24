@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,8 @@
 
         .gallery img {
             width: 100%;
-            height: auto;
+            height: 200px; /* Nastavená výška pro všechny obrázky */
+            object-fit: cover; /* Zajistí, že obrázky se oříznou na správné proporce */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -52,7 +53,18 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        
+
+        .text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -73,34 +85,42 @@
     <div>
         <img src="https://cz.bellfor.info/image/catalog/Blog/blog_pictures_multilang/labrador-merkmale.jpg" alt="Pes 1">
         <div class="caption">Pes 1 - Rasa: Labrador</div>
+        <div class="text">Labrador je přátelský a aktivní pes, známý pro svou lásku k vodním aktivitám. Je ideální pro rodiny i jednotlivce, kteří hledají věrného a hravého společníka.</div>
     </div>
     <div>
         <img src="https://cdn.myshoptet.com/usr/www.chlupaci.cz/user/documents/upload/clanky-psi-plemena/Nemecky-ovcak/Psi-plemeno-nemecky-ovcak%20(14).jpg" alt="Pes 2">
         <div class="caption">Pes 2 - Rasa: Německý ovčák</div>
+        <div class="text">Německý ovčák je inteligentní a loajální pes, často používaný v policejní a záchranné službě. Je to aktivní a silný pes, ideální pro zkušené majitele.</div>
     </div>
     <div>
         <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1FONhFfOj-39SKuvhEyJZsidXSh0x-6bPOSBiBaGNJhOyBwEZ2Gs90Ql50TgSsMIYqvjRJZB-KZADJZkooxdjsQ" alt="Pes 3">
         <div class="caption">Pes 3 - Rasa: Zlatý retrívr</div>
+        <div class="text">Zlatý retrívr je milý, trpělivý a hravý pes. Je skvělým společníkem pro rodiny s dětmi, ale také výborným pracovním psem díky své inteligenci a trénovatelnosti.</div>
     </div>
     <div>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpVgOTjh2Bqb_fR8O6_30xppY1bQ-GwGPLoFnW6BxFyHgVAgbhg4HUWYifry7gNVB-AoFzXHaYNO-JjRIuk8u1w" alt="Pes 4">
         <div class="caption">Pes 4 - Rasa: Beagle</div>
+        <div class="text">Beagle je malý až středně velký pes, známý pro svůj vynikající čich. Je hravý, přátelský a skvělý pro rodiny. Beagle je ideální společník pro aktivní životní styl.</div>
     </div>
     <div>
         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNndzZp5Yh953dFkjf3zcOJCO6IDu_qJlspXRmtrzAueSHra084E1w0t5TiHYT-_Nt4r1DF_SK2Hmkk0JL9Ea-zA" alt="Pes 5">
         <div class="caption">Pes 5 - Rasa: Buldoček</div>
+        <div class="text">Buldoček je robustní a přátelský pes s charakteristickým vzhledem. Je známý svou odolností a klidnou povahou, což z něj činí ideálního společníka do bytu.</div>
     </div>
     <div>
         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6LZLoCOaUX_-XrmstD1te4kjzB2H3nAvN3BYLLS63eu9XEigT5Fe24E-RYF8RLChIjxsbNIgmLUn6nRfMroHLdw" alt="Pes 6">
         <div class="caption">Pes 6 - Rasa: Dalmatin</div>
+        <div class="text">Dalmatin je energický a přátelský pes, který je známý pro svou charakteristickou skvrnitou srst. Je aktivní a potřebuje dostatek pohybu, aby byl šťastný.</div>
     </div>
     <div>
         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRQch8S4S7Yv-E49ra2TetzSbzomEtjSf-CSe0VsiASl8DN4-tvPRjJnXhWJm1dqN__95Bk_JtItLiWeQF93ASUg" alt="Pes 7">
         <div class="caption">Pes 7 - Rasa: Mops</div>
+        <div class="text">Mops je malý, kompaktní pes s výrazným obličejem a hravou povahou. Je známý svou loajalitou a tendencí být středem pozornosti. Skvělý pes pro rodiny a jednotlivce hledající společníka.</div>
     </div>
     <div>
         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuHpgcVYF0wVKX4gVJsKj-wk9y2X1aQDbrHOr24LCp_nZfOuc3W3Kkxl85itRNOLJIO4k6Tv9XTSf9PinbuaUCkA" alt="Pes 8">
         <div class="caption">Pes 8 - Rasa: Šiba Inu</div>
+        <div class="text">Šiba Inu je malý až střední pes původem z Japonska, známý pro svou nezávislou povahu a krásnou srst. Je to inteligentní pes, který je věrný a loajální.</div>
     </div>
 </div>
 
