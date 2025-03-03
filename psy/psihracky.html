@@ -3,33 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Psí hračky – Dobré a špatné</title>
-<link rel="stylesheet" href="style.css">
+<title>Psí hračky – Které jsou dobré a které ne?</title>
+<style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            line-height: 1.6;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f8f9fa;
+
+        }
+
+        header {
+
+            background-color: #ffcc00;
+
+            padding: 20px;
+
+            text-align: center;
+
+        }
+
+        h1, h2 {
+
+            color: #333;
+
+        }
+
+        main {
+
+            max-width: 900px;
+
+            margin: 20px auto;
+
+            padding: 20px;
+
+            background: white;
+
+            border-radius: 8px;
+
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .toy {
+
+            display: flex;
+
+            align-items: center;
+
+            margin-bottom: 20px;
+
+        }
+
+        .toy img {
+
+            width: 120px;
+
+            height: 120px;
+
+            border-radius: 10px;
+
+            margin-right: 20px;
+
+        }
+
+        .review {
+
+            background-color: #e8e8e8;
+
+            padding: 10px;
+
+            margin: 10px 0;
+
+            border-radius: 5px;
+
+        }
+
+        footer {
+
+            text-align: center;
+
+            padding: 10px;
+
+            background-color: #222;
+
+            color: white;
+
+        }
+</style>
 </head>
 <body>
 <header>
 <h1>Psí hračky: Které jsou dobré a které ne?</h1>
+<p>Vyberte pro svého psa to nejlepší! Podívejte se na doporučené hračky a vyhněte se nebezpečným produktům.</p>
 </header>
 <main>
 <section id="good-toys">
-<h2>Dobré hračky pro psy</h2>
-<ul>
-<li><strong>Gumové hračky</strong> – Odolné a bezpečné pro zuby.</li>
-<li><strong>Interaktivní hračky</strong> – Pomáhají s výcvikem a mentální stimulací.</li>
-<li><strong>Provazové hračky</strong> – Skvělé na přetahování a čištění zubů.</li>
-</ul>
+<h2>✅ Dobré hračky pro psy</h2>
+<div class="toy">
+<img src="https://via.placeholder.com/120" alt="Gumová hračka">
+<h3>Gumové hračky</h3>
+<p>Odolné a bezpečné pro zuby. Skvělé pro žvýkání.</p>
+</div>
+<div class="toy">
+<img src="https://via.placeholder.com/120" alt="Interaktivní hračka">
+<h3>Interaktivní hračky</h3>
+<p>Podporují mentální stimulaci a zlepšují poslušnost.</p>
+</div>
+<div class="toy">
+<img src="https://via.placeholder.com/120" alt="Provazová hračka">
+<h3>Provazové hračky</h3>
+<p>Skvělé na přetahování a čištění zubů.</p>
+</div>
 </section>
 <section id="bad-toys">
-<h2>Špatné hračky pro psy</h2>
-<ul>
-<li><strong>Plyšové hračky s výplní</strong> – Mohou být snadno roztrhány a spolknuty.</li>
-<li><strong>Levné plastové hračky</strong> – Mohou obsahovat škodlivé chemikálie.</li>
-<li><strong>Malé hračky</strong> – Riziko udušení.</li>
-</ul>
+<h2>❌ Špatné hračky pro psy</h2>
+<div class="toy">
+<img src="https://via.placeholder.com/120" alt="Plyšová hračka">
+<h3>Plyšové hračky s výplní</h3>
+<p>Snadno se roztrhají a mohou být nebezpečné při spolknutí.</p>
+</div>
+<div class="toy">
+<img src="https://via.placeholder.com/120" alt="Levná plastová hračka">
+<h3>Levné plastové hračky</h3>
+<p>Mohou obsahovat toxické látky a snadno se rozbijí.</p>
+</div>
+<div class="toy">
+<img src="https://via.placeholder.com/120" alt="Malá hračka">
+<h3>Malé hračky</h3>
+<p>Mohou představovat riziko udušení, zejména pro větší psy.</p>
+</div>
+</section>
+<section id="reviews">
+<h2>📢 Recenze majitelů psů</h2>
+<div class="review">
+<p>"Moje fenka Bella miluje gumové hračky! Jsou odolné a bezpečné." – <strong>Marie K.</strong></p>
+</div>
+<div class="review">
+<p>"Koupil jsem levnou plastovou hračku a můj pes ji rozkousal za 5 minut. Už nikdy!" – <strong>Petr S.</strong></p>
+</div>
 </section>
 </main>
 <footer>
-<p>&copy; 2025 Psí Hračky</p>
+<p>&copy; 2025 Psí Hračky | Všechna práva vyhrazena</p>
 </footer>
+<script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            alert("Vítejte na stránce o psích hračkách!");
+
+            // Změna barvy nadpisu po kliknutí
+
+            document.querySelector("h1").addEventListener("click", function() {
+
+                this.style.color = "#ff6600";
+
+            });
+
+            // Zvýraznění sekce po najetí myší
+
+            document.querySelectorAll("section").forEach(section => {
+
+                section.addEventListener("mouseenter", function() {
+
+                    this.style.backgroundColor = "#f0f0f0";
+
+                });
+
+                section.addEventListener("mouseleave", function() {
+
+                    this.style.backgroundColor = "white";
+
+                });
+
+            });
+
+        });
+</script>
 </body>
 </html> 
