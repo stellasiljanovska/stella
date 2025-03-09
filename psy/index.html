@@ -13,6 +13,27 @@
             color: #000; /* Nastavení barvy textu na černou pro všechny elementy */
         }
 
+        /* Navigační lišta */
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Hlavní hlavička */
         header {
             background-color: #4CAF50;
             color: white;
@@ -27,7 +48,7 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Zlepšení responsivity */
             gap: 20px;
             padding: 40px 20px;
         }
@@ -95,14 +116,21 @@
         }
     </style>
 </head>
-<body><a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+<body>
+
+<!-- Navigační lišta -->
+<nav>
+    <a href="#home">Úvod</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Kontakt</a>
+</nav>
 
 <header>
     <h1>Galerie Psů</h1>
     <p>Prohlédněte si naše krásné psy</p>
 </header>
 
-<div class="gallery">
+<div class="gallery" id="gallery">
     <div>
         <img src="https://cz.bellfor.info/image/catalog/Blog/blog_pictures_multilang/labrador-merkmale.jpg" alt="Pes 1">
         <div class="caption">Pes 1 - Rasa: Labrador</div>
@@ -133,16 +161,6 @@
         <div class="caption">Pes 6 - Rasa: Dalmatin</div>
         <div class="text">Dalmatin je energický a přátelský pes, který je známý pro svou charakteristickou skvrnitou srst. Je aktivní a potřebuje dostatek pohybu, aby byl šťastný.</div>
     </div>
-    <div>
-        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRQch8S4S7Yv-E49ra2TetzSbzomEtjSf-CSe0VsiASl8DN4-tvPRjJnXhWJm1dqN__95Bk_JtItLiWeQF93ASUg" alt="Pes 7">
-        <div class="caption">Pes 7 - Rasa: Mops</div>
-        <div class="text">Mops je malý, kompaktní pes s výrazným obličejem a hravou povahou. Je známý svou loajalitou a tendencí být středem pozornosti. Skvělý pes pro rodiny a jednotlivce hledající společníka.</div>
-    </div>
-    <div>
-        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuHpgcVYF0wVKX4gVJsKj-wk9y2X1aQDbrHOr24LCp_nZfOuc3W3Kkxl85itRNOLJIO4k6Tv9XTSf9PinbuaUCkA" alt="Pes 8">
-        <div class="caption">Pes 8 - Rasa: Šiba Inu</div>
-        <div class="text">Šiba Inu je malý až střední pes původem z Japonska, známý pro svou nezávislou povahu a krásnou srst. Je to inteligentní pes, který je věrný a loajální.</div>
-    </div>
 </div>
 
 <footer>
@@ -150,5 +168,4 @@
 </footer>
 
 </body>
-</html> 
-
+</html>
