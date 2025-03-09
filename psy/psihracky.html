@@ -1,5 +1,4 @@
-l> 
-<!DOCTYPE html>
+l> <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
@@ -13,14 +12,36 @@ l>
             padding: 0;
             background-color: #f8f9fa;
         }
+
+        /* Navigační lišta */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ffcc00;
+            border-radius: 5px;
+        }
+
         header {
             background-color: #ffcc00;
             padding: 20px;
             text-align: center;
         }
+
         h1, h2 {
             color: #333;
         }
+
         main {
             max-width: 900px;
             margin: 20px auto;
@@ -29,11 +50,13 @@ l>
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+
         .toy {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
+
         .toy img {
             width: 120px;  /* Stejná šířka pro všechny obrázky */
             height: 120px; /* Stejná výška pro všechny obrázky */
@@ -41,12 +64,14 @@ l>
             border-radius: 10px;
             margin-right: 20px;
         }
+
         .review {
             background-color: #e8e8e8;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
         }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -56,11 +81,18 @@ l>
     </style>
 </head>
 <body>
-    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+    <!-- Navigační lišta -->
+    <nav>
+        <a href="#good-toys">Dobré hračky</a>
+        <a href="#bad-toys">Špatné hračky</a>
+        <a href="#reviews">Recenze</a>
+    </nav>
+
     <header>
         <h1>Psí hračky: Které jsou dobré a které ne?</h1>
         <p>Vyberte pro svého psa to nejlepší! Podívejte se na doporučené hračky a vyhněte se nebezpečným produktům.</p>
     </header>
+
     <main>
         <section id="good-toys">
             <h2>✅ Dobré hračky pro psy</h2>
@@ -80,6 +112,7 @@ l>
                 <p>Skvělé na přetahování a čištění zubů.</p>
             </div>
         </section>
+
         <section id="bad-toys">
             <h2>❌ Špatné hračky pro psy</h2>
             <div class="toy">
@@ -98,6 +131,7 @@ l>
                 <p>Mohou představovat riziko udušení, zejména pro větší psy.</p>
             </div>
         </section>
+
         <section id="reviews">
             <h2>📢 Recenze majitelů psů</h2>
             <div class="review">
@@ -108,17 +142,19 @@ l>
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Psí Hračky | Všechna práva vyhrazena</p>
     </footer>
+
     <script>
+        // Změna barvy nadpisu po kliknutí
+        document.querySelector("h1").addEventListener("click", function() {
+            this.style.color = "#ff6600";
+        });
+
+        // Zvýraznění sekce po najetí myší
         document.addEventListener("DOMContentLoaded", function() {
-            alert("Vítejte na stránce o psích hračkách!");
-            // Změna barvy nadpisu po kliknutí
-            document.querySelector("h1").addEventListener("click", function() {
-                this.style.color = "#ff6600";
-            });
-            // Zvýraznění sekce po najetí myší
             document.querySelectorAll("section").forEach(section => {
                 section.addEventListener("mouseenter", function() {
                     this.style.backgroundColor = "#f0f0f0";
@@ -128,12 +164,9 @@ l>
                 });
             });
         });
+
+        // Vítejte alert při načtení stránky
+        alert("Vítejte na stránce o psích hračkách!");
     </script>
 </body>
 </html>
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c48a0983479f9058002eaecac6285d93c9ce405c
