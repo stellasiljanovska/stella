@@ -1,136 +1,156 @@
 <<!<
 
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informace o Psech</title>
+    <title>Galerie Psů</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
-            color: #333;
-        }
-
-        /* Navigace */
-        nav {
-            background-color: #0073e6;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 1.2em;
-            padding: 10px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00;
+            color: #000; /* Nastavení barvy textu na černou pro všechny elementy */
         }
 
         header {
-            padding: 80px 20px 20px;
+            background-color: #4CAF50;
+            color: white;
             text-align: center;
-        }
-
-        .content {
             padding: 40px 20px;
-            max-width: 800px;
-            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .content h2 {
-            font-size: 2em;
-            color: #0073e6;
+        header h1, header p {
+            color: #000; /* Černý text pro nadpisy v hlavičce */
         }
 
-        .content p {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .gallery div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery div:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color:black;
+            padding: 10px;
+            border-radius: 5px;
             font-size: 1.1em;
-            line-height: 1.6;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
-        .info-box {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+        .gallery div:hover .caption {
+            opacity: 1;
+        }
+
+        .text {
+            padding: 15px;
+            font-size: 1em;
+            line-height: 1.6;
+            background-color: #fff;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+            color: #000; /* Text v popisku je teď černý */
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #0073e6;
-            color: white;
+            background-color: #4CAF50;
+            color:black;
             margin-top: 30px;
         }
 
-        section {
-            padding-top: 80px;
-            margin-top: -80px;
+        footer p {
+            font-size: 1em;
+            margin: 0;
+            color: #000; /* Černý text pro text v patičce */
         }
     </style>
 </head>
-<body>
-
-<!-- Navigace -->
-<nav>
-    <ul>
-        <li><a href="#breeds">Plemena</a></li>
-        <li><a href="#care">Péče</a></li>
-        <li><a href="#training">Výcvik</a></li>
-    </ul>
-</nav>
+<body><a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
 
 <header>
-    <h1>Informace o Psech</h1>
-    <p>Vše, co potřebujete vědět o psech – plemena, péče a výcvik</p>
+    <h1>Galerie Psů</h1>
+    <p>Prohlédněte si naše krásné psy</p>
 </header>
 
-<div class="content">
-
-    <section id="breeds" class="info-box">
-        <h2>🐶 Plemena psů</h2>
-        <p>Existuje mnoho plemen psů, od malých až po obří. Mezi nejoblíbenější plemena patří labradorský retrívr, německý ovčák a francouzský buldoček.</p>
-    </section>
-
-    <section id="care" class="info-box">
-        <h2>🛁 Péče o psy</h2>
-        <p>Každý pes potřebuje pravidelnou péči – koupání, česání a kontrolu u veterináře. Správná výživa a pohyb jsou také klíčové.</p>
-    </section>
-
-    <section id="training" class="info-box">
-        <h2>🎾 Výcvik psů</h2>
-        <p>Výcvik je důležitý pro poslušnost psa. Základní povely jako "sedni", "zůstaň" a "ke mně" pomáhají v každodenním životě.</p>
-    </section>
-
+<div class="gallery">
+    <div>
+        <img src="https://cz.bellfor.info/image/catalog/Blog/blog_pictures_multilang/labrador-merkmale.jpg" alt="Pes 1">
+        <div class="caption">Pes 1 - Rasa: Labrador</div>
+        <div class="text">Labrador je přátelský a aktivní pes, známý pro svou lásku k vodním aktivitám. Je ideální pro rodiny i jednotlivce, kteří hledají věrného a hravého společníka.</div>
+    </div>
+    <div>
+        <img src="https://cdn.myshoptet.com/usr/www.chlupaci.cz/user/documents/upload/clanky-psi-plemena/Nemecky-ovcak/Psi-plemeno-nemecky-ovcak%20(14).jpg" alt="Pes 2">
+        <div class="caption">Pes 2 - Rasa: Německý ovčák</div>
+        <div class="text">Německý ovčák je inteligentní a loajální pes, často používaný v policejní a záchranné službě. Je to aktivní a silný pes, ideální pro zkušené majitele.</div>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1FONhFfOj-39SKuvhEyJZsidXSh0x-6bPOSBiBaGNJhOyBwEZ2Gs90Ql50TgSsMIYqvjRJZB-KZADJZkooxdjsQ" alt="Pes 3">
+        <div class="caption">Pes 3 - Rasa: Zlatý retrívr</div>
+        <div class="text">Zlatý retrívr je milý, trpělivý a hravý pes. Je skvělým společníkem pro rodiny s dětmi, ale také výborným pracovním psem díky své inteligenci a trénovatelnosti.</div>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpVgOTjh2Bqb_fR8O6_30xppY1bQ-GwGPLoFnW6BxFyHgVAgbhg4HUWYifry7gNVB-AoFzXHaYNO-JjRIuk8u1w" alt="Pes 4">
+        <div class="caption">Pes 4 - Rasa: Beagle</div>
+        <div class="text">Beagle je malý až středně velký pes, známý pro svůj vynikající čich. Je hravý, přátelský a skvělý pro rodiny. Beagle je ideální společník pro aktivní životní styl.</div>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNndzZp5Yh953dFkjf3zcOJCO6IDu_qJlspXRmtrzAueSHra084E1w0t5TiHYT-_Nt4r1DF_SK2Hmkk0JL9Ea-zA" alt="Pes 5">
+        <div class="caption">Pes 5 - Rasa: Buldoček</div>
+        <div class="text">Buldoček je robustní a přátelský pes s charakteristickým vzhledem. Je známý svou odolností a klidnou povahou, což z něj činí ideálního společníka do bytu.</div>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6LZLoCOaUX_-XrmstD1te4kjzB2H3nAvN3BYLLS63eu9XEigT5Fe24E-RYF8RLChIjxsbNIgmLUn6nRfMroHLdw" alt="Pes 6">
+        <div class="caption">Pes 6 - Rasa: Dalmatin</div>
+        <div class="text">Dalmatin je energický a přátelský pes, který je známý pro svou charakteristickou skvrnitou srst. Je aktivní a potřebuje dostatek pohybu, aby byl šťastný.</div>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRQch8S4S7Yv-E49ra2TetzSbzomEtjSf-CSe0VsiASl8DN4-tvPRjJnXhWJm1dqN__95Bk_JtItLiWeQF93ASUg" alt="Pes 7">
+        <div class="caption">Pes 7 - Rasa: Mops</div>
+        <div class="text">Mops je malý, kompaktní pes s výrazným obličejem a hravou povahou. Je známý svou loajalitou a tendencí být středem pozornosti. Skvělý pes pro rodiny a jednotlivce hledající společníka.</div>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuHpgcVYF0wVKX4gVJsKj-wk9y2X1aQDbrHOr24LCp_nZfOuc3W3Kkxl85itRNOLJIO4k6Tv9XTSf9PinbuaUCkA" alt="Pes 8">
+        <div class="caption">Pes 8 - Rasa: Šiba Inu</div>
+        <div class="text">Šiba Inu je malý až střední pes původem z Japonska, známý pro svou nezávislou povahu a krásnou srst. Je to inteligentní pes, který je věrný a loajální.</div>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2025 Informace o Psech | Všechna práva vyhrazena</p>
+    <p>&copy; 2025 Galerie Psů. Všechna práva vyhrazena.</p>
 </footer>
 
 </body>
 </html>
+
