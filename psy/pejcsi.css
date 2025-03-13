@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="icon" href="https://spemer.com/img/works/favicon/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psí hračky – Které jsou dobré a které ne?</title>
+    <link rel="stylesheet" href="pejcsi.css">
+
+    <style>
+        /* Obecné styly pro celé tělo stránky */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f8f8;
@@ -39,72 +50,166 @@
             color: #000; /* Černý text pro nadpisy v hlavičce */
         }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Zlepšení responsivity */
-            gap: 20px;
-            padding: 40px 20px;
+        /* Flexbox pro centrování všech sekcí s obrázky */
+        #good-toys, #bad-toys {
+            display: flex;
+            justify-content: center;  /* Centrum pro obrázky */
+            flex-wrap: wrap;  /* Umožní přechod na nový řádek, pokud je potřeba */
+            gap: 20px;  /* Větší mezery mezi obrázky */
+            margin: 20px auto;  /* Středování sekce */
+            max-width: 90%;  /* Ujistíme se, že obrázky nebudou příliš široké */
         }
 
-        .gallery div {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            background-color: white;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+        /* Styly pro kontejnery obrázků */
+        .toy {
+            display: flex;
+            flex-direction: column;  /* Zajištění, že obrázek a text budou pod sebou */
+            align-items: center;  /* Středíme obsah */
+            width: 300px;  /* Fixní šířka pro každý box */
+            margin-bottom: 20px;  /* Mezera mezi obrázky */
         }
 
-        .gallery div:hover {
-            transform: scale(1.05);
+        /* Obrázky */
+        .toy img {
+            width: 100%;  /* Obrázek zabírá celou šířku kontejneru */
+            height: auto;  /* Výška se přizpůsobí proporcím */
+            display: block;
+            margin-bottom: 10px;  /* Mezera mezi obrázkem a textem */
         }
 
-        .gallery img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 12px;
-        }
-
-        .caption {
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            background-color: rgba(0, 0, 0, 0.6);
-            color:black;
+        /* Styly pro navigaci */
+        nav {
+            background-color: #333;
             padding: 10px;
-            border-radius: 5px;
-            font-size: 1.1em;
-            font-weight: bold;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            text-align: center;
         }
 
-        .gallery div:hover .caption {
-            opacity: 1;
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
         }
 
-        .text {
-            padding: 15px;
-            font-size: 1em;
-            line-height: 1.6;
-            background-color: #fff;
-            border-radius: 0 0 12px 12px;
-            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-            color: #000; /* Text v popisku je teď černý */
+        /* Styly pro hlavičku */
+        header {
+            text-align: center;
+            margin: 40px 0;
         }
 
+        /* Styly pro recenze */
+        #reviews {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        #reviews .review {
+            margin-bottom: 20px;
+        }
+
+        /* Styly pro patičku */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #4CAF50;
-            color:black;
-            margin-top: 30px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
 
-        footer p {
-            font-size: 1em;
-            margin: 0;
-            color: #000; /* Černý text pro text v patičce */
-        }
-    
+    </style>
+</head>
+<body>
+    <!-- Navigační lišta -->
+    <nav>
+        <a href="index.html">galerie psů</a>
+        <a href="psihracky.html">hračky</a>
+        <a href="psijidlo.html">jídlo pro psy</a>
+    </nav>
+
+    <header>
+        <h1>Psí hračky: Které jsou dobré a které ne?</h1>
+        <p>Vyberte pro svého psa to nejlepší! Podívejte se na doporučené hračky a vyhněte se nebezpečným produktům.</p>
+    </header>
+
+    <main>
+        <section id="good-toys">
+            <h2>✅ Dobré hračky pro psy</h2>
+            <div class="toy">
+                <img src="https://cdn.myshoptet.com/usr/www.vsepropejska.cz/user/shop/big/2379_bea-gumova-kost-pro-psa-hracky-pro-psy-vsepropejska-cz.jpg?614aec65" alt="Gumová kost pro psa - odolná žvýkací hračka">
+                <h3>Gumové hračky</h3>
+                <p>Odolné a bezpečné pro zuby. Skvělé pro žvýkání.</p>
+            </div>
+            <div class="toy">
+                <img src="https://media.zooplus.com/bilder/6/400/23058_pla_2in1doggybraintrainhundespielzeug_25cm_6.jpg" alt="Interaktivní hračka pro psy">
+                <h3>Interaktivní hračky</h3>
+                <p>Podporují mentální stimulaci a zlepšují poslušnost.</p>
+            </div>
+            <div class="toy">
+                <img src="https://cdn.myshoptet.com/usr/www.tailmate.cz/user/shop/big/56-4_rope-be-3.png?672cce2a" alt="Provazová hračka pro psy">
+                <h3>Provazové hračky</h3>
+                <p>Skvělé na přetahování a čištění zubů.</p>
+            </div>
+        </section>
+
+        <section id="bad-toys">
+            <h2>❌ Špatné hračky pro psy</h2>
+            <div class="toy">
+                <img src="https://media.zooplus.com/bilder/6/400/485517_wild_knots_bears_bra_6.jpg" alt="Plyšová hračka pro psy">
+                <h3>Plyšové hračky s výplní</h3>
+                <p>Snadno se roztrhají a mohou být nebezpečné při spolknutí.</p>
+            </div>
+            <div class="toy">
+                <img src="https://cdn.myshoptet.com/usr/www.happyzoo.cz/user/shop/big/74509-3_hracka-hiphop-latex-kachnicka-14cm.jpg?67c51a41" alt="Levná plastová hračka pro psy">
+                <h3>Levné plastové hračky</h3>
+                <p>Mohou obsahovat toxické látky a snadno se rozbijí.</p>
+            </div>
+            <div class="toy">
+                <img src="https://cdn.myshoptet.com/usr/www.akinu.cz/user/shop/big/18326_b8da5ad413371a94a4e77dd8a8404ad9.jpg?6405e10b" alt="Malá hračka pro psy">
+                <h3>Malé hračky</h3>
+                <p>Mohou představovat riziko udušení, zejména pro větší psy.</p>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>📢 Recenze majitelů psů</h2>
+            <div class="review">
+                <p>"Moje fenka Bella miluje gumové hračky! Jsou odolné a bezpečné." – <strong>Marie K.</strong></p>
+            </div>
+            <div class="review">
+                <p>"Koupil jsem levnou plastovou hračku a můj pes ji rozkousal za 5 minut. Už nikdy!" – <strong>Petr S.</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Psí Hračky | pouze pro studejní účely</p>
+    </footer>
+
+    <script>
+        // Změna barvy nadpisu po kliknutí
+        document.querySelector("h1").addEventListener("click", function() {
+            this.style.color = "#ff6600";
+        });
+
+        // Zvýraznění sekce po najetí myší
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("section").forEach(section => {
+                section.addEventListener("mouseenter", function() {
+                    this.style.backgroundColor = "#f0f0f0";
+                });
+                section.addEventListener("mouseleave", function() {
+                    this.style.backgroundColor = "white";
+                });
+            });
+        });
+
+        // Vítejte alert při načtení stránky
+        alert("Vítejte na stránce o psích hračkách!");
+    </script>
+</body>
+</html>
