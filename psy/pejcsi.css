@@ -51,22 +51,28 @@
         }
 
         /* Flexbox pro centrování všech sekcí s obrázky */
-        #good-toys, #bad-toys {
+        #good-toys {
             display: flex;
-            justify-content: center;  /* Centrum pro obrázky */
-            flex-wrap: wrap;  /* Umožní přechod na nový řádek, pokud je potřeba */
+            flex-direction: column;  /* Text bude nad obrázky */
+            align-items: center;  /* Středování sekce */
             gap: 20px;  /* Větší mezery mezi obrázky */
-            margin: 20px auto;  /* Středování sekce */
+            margin: 20px auto;
             max-width: 90%;  /* Ujistíme se, že obrázky nebudou příliš široké */
         }
 
         /* Styly pro kontejnery obrázků */
+        .toys-container {
+            display: flex;
+            justify-content: center;  /* Centrum pro obrázky */
+            gap: 20px;  /* Větší mezery mezi obrázky */
+            flex-wrap: wrap;  /* Umožní přechod na nový řádek, pokud je potřeba */
+        }
+
         .toy {
             display: flex;
             flex-direction: column;  /* Zajištění, že obrázek a text budou pod sebou */
             align-items: center;  /* Středíme obsah */
             width: 300px;  /* Fixní šířka pro každý box */
-            margin-bottom: 20px;  /* Mezera mezi obrázky */
         }
 
         /* Obrázky */
@@ -139,39 +145,43 @@
     <main>
         <section id="good-toys">
             <h2>✅ Dobré hračky pro psy</h2>
-            <div class="toy">
-                <img src="https://cdn.myshoptet.com/usr/www.vsepropejska.cz/user/shop/big/2379_bea-gumova-kost-pro-psa-hracky-pro-psy-vsepropejska-cz.jpg?614aec65" alt="Gumová kost pro psa - odolná žvýkací hračka">
-                <h3>Gumové hračky</h3>
-                <p>Odolné a bezpečné pro zuby. Skvělé pro žvýkání.</p>
-            </div>
-            <div class="toy">
-                <img src="https://media.zooplus.com/bilder/6/400/23058_pla_2in1doggybraintrainhundespielzeug_25cm_6.jpg" alt="Interaktivní hračka pro psy">
-                <h3>Interaktivní hračky</h3>
-                <p>Podporují mentální stimulaci a zlepšují poslušnost.</p>
-            </div>
-            <div class="toy">
-                <img src="https://cdn.myshoptet.com/usr/www.tailmate.cz/user/shop/big/56-4_rope-be-3.png?672cce2a" alt="Provazová hračka pro psy">
-                <h3>Provazové hračky</h3>
-                <p>Skvělé na přetahování a čištění zubů.</p>
+            <div class="toys-container">
+                <div class="toy">
+                    <img src="https://cdn.myshoptet.com/usr/www.vsepropejska.cz/user/shop/big/2379_bea-gumova-kost-pro-psa-hracky-pro-psy-vsepropejska-cz.jpg?614aec65" alt="Gumová kost pro psa - odolná žvýkací hračka">
+                    <h3>Gumové hračky</h3>
+                    <p>Odolné a bezpečné pro zuby. Skvělé pro žvýkání.</p>
+                </div>
+                <div class="toy">
+                    <img src="https://media.zooplus.com/bilder/6/400/23058_pla_2in1doggybraintrainhundespielzeug_25cm_6.jpg" alt="Interaktivní hračka pro psy">
+                    <h3>Interaktivní hračky</h3>
+                    <p>Podporují mentální stimulaci a zlepšují poslušnost.</p>
+                </div>
+                <div class="toy">
+                    <img src="https://cdn.myshoptet.com/usr/www.tailmate.cz/user/shop/big/56-4_rope-be-3.png?672cce2a" alt="Provazová hračka pro psy">
+                    <h3>Provazové hračky</h3>
+                    <p>Skvělé na přetahování a čištění zubů.</p>
+                </div>
             </div>
         </section>
 
         <section id="bad-toys">
             <h2>❌ Špatné hračky pro psy</h2>
-            <div class="toy">
-                <img src="https://media.zooplus.com/bilder/6/400/485517_wild_knots_bears_bra_6.jpg" alt="Plyšová hračka pro psy">
-                <h3>Plyšové hračky s výplní</h3>
-                <p>Snadno se roztrhají a mohou být nebezpečné při spolknutí.</p>
-            </div>
-            <div class="toy">
-                <img src="https://cdn.myshoptet.com/usr/www.happyzoo.cz/user/shop/big/74509-3_hracka-hiphop-latex-kachnicka-14cm.jpg?67c51a41" alt="Levná plastová hračka pro psy">
-                <h3>Levné plastové hračky</h3>
-                <p>Mohou obsahovat toxické látky a snadno se rozbijí.</p>
-            </div>
-            <div class="toy">
-                <img src="https://cdn.myshoptet.com/usr/www.akinu.cz/user/shop/big/18326_b8da5ad413371a94a4e77dd8a8404ad9.jpg?6405e10b" alt="Malá hračka pro psy">
-                <h3>Malé hračky</h3>
-                <p>Mohou představovat riziko udušení, zejména pro větší psy.</p>
+            <div class="toys-container">
+                <div class="toy">
+                    <img src="https://media.zooplus.com/bilder/6/400/485517_wild_knots_bears_bra_6.jpg" alt="Plyšová hračka pro psy">
+                    <h3>Plyšové hračky s výplní</h3>
+                    <p>Snadno se roztrhají a mohou být nebezpečné při spolknutí.</p>
+                </div>
+                <div class="toy">
+                    <img src="https://cdn.myshoptet.com/usr/www.happyzoo.cz/user/shop/big/74509-3_hracka-hiphop-latex-kachnicka-14cm.jpg?67c51a41" alt="Levná plastová hračka pro psy">
+                    <h3>Levné plastové hračky</h3>
+                    <p>Mohou obsahovat toxické látky a snadno se rozbijí.</p>
+                </div>
+                <div class="toy">
+                    <img src="https://cdn.myshoptet.com/usr/www.akinu.cz/user/shop/big/18326_b8da5ad413371a94a4e77dd8a8404ad9.jpg?6405e10b" alt="Malá hračka pro psy">
+                    <h3>Malé hračky</h3>
+                    <p>Mohou představovat riziko udušení, zejména pro větší psy.</p>
+                </div>
             </div>
         </section>
 
