@@ -8,21 +8,31 @@
     <link rel="stylesheet" href="pejcsi.css">
 
     <style>
-        /* Nastavení stejných rozměrů pro všechny obrázky */
-        .toy img {
-            width: 100%;  /* Obrázek zabírá celou šířku kontejneru */
-            height: auto; /* Výška se přizpůsobí zachování proporcí */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        /* Flexbox pro centrování všech sekcí s obrázky */
+        #good-toys, #bad-toys {
+            display: flex;
+            justify-content: center;  /* Centrum pro obrázky */
+            flex-wrap: wrap;  /* Umožní přechod na nový řádek, pokud je potřeba */
+            gap: 20px;  /* Větší mezery mezi obrázky */
+            margin: 20px auto;  /* Středování sekce */
+            max-width: 90%;  /* Ujistíme se, že obrázky nebudou příliš široké */
         }
 
-        /* Styly pro kontejnery s obrázky */
+        /* Styly pro kontejnery obrázků */
         .toy {
-            display: inline-block;
-            margin: 15px;
-            text-align: center;
-            width: 300px;  /* Nastavení šířky pro každý box */
+            display: flex;
+            flex-direction: column;  /* Zajištění, že obrázek a text budou pod sebou */
+            align-items: center;  /* Středíme obsah */
+            width: 300px;  /* Fixní šířka pro každý box */
+            margin-bottom: 20px;  /* Mezera mezi obrázky */
+        }
+
+        /* Obrázky */
+        .toy img {
+            width: 100%;  /* Obrázek zabírá celou šířku kontejneru */
+            height: auto;  /* Výška se přizpůsobí proporcím */
+            display: block;
+            margin-bottom: 10px;  /* Mezera mezi obrázkem a textem */
         }
     </style>
 </head>
