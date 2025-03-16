@@ -3,140 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psi a Jídlo</title>
-    <link rel="stylesheet" href="pejcsi.css">
-    <link rel="icon" href="https://spemer.com/img/works/favicon/favicon.png" type="image/png">
+    <title>Psí hračky – Které jsou dobré a které ne?</title>
     <style>
-        /* Základní nastavení pro centrování textu */
         body {
-            text-align: center;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
         }
 
-        /* Navigační lišta */
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hlavní nadpis */
-        header h1 {
-            font-size: 2.5em;
-            margin-top: 20px;
-        }
-
-        header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-
-        /* Obsah */
-        #content {
+        header {
+            background-color: #ffcc00;
             padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        #gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        #gallery div {
             text-align: center;
-            width: 300px;
         }
 
-        #gallery img {
-            width: 100%;
-            height: auto;
+        h1, h2 {
+            color: #333;
         }
 
-        .caption {
-            font-weight: bold;
-            margin-top: 10px;
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .description {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 10px;
+        /* Styl pro sekce a nadpisy */
+        #good-toys, #bad-toys {
+            text-align: left; /* Zarovnáme nadpisy vlevo */
         }
 
-        /* Patička */
+        #good-toys h2, #bad-toys h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        #good-toys p, #bad-toys p {
+            text-align: justify; /* Zarovnáme texty popisů */
+            margin-bottom: 10px;
+        }
+
+        .toy {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .toy img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .review {
+            background-color: #e8e8e8;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
         footer {
-            background-color: #333;
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
             color: white;
-            padding: 10px 0;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Navigační lišta -->
-    <nav>
-        <a href="index.html">Oblíbené jídlo</a>
-        <a href="psihracky.html">Galerie psů</a>
-        <a href="psijidlo.html">psí hračky</a>
-    </nav>
 
-    <header>
-        <h1>Psi a Jídlo</h1>
-        <p>Prohlédněte si naše psy, kteří si užívají svá oblíbená jídla</p>
-    </header>
+<header>
+    <h1>Psí hračky: Které jsou dobré a které ne?</h1>
+    <p>Vyberte pro svého psa to nejlepší! Podívejte se na doporučené hračky a vyhněte se nebezpečným produktům.</p>
+</header>
 
-    <div id="content" class="content">
-        <h2>Oblíbené jídlo pro psy</h2>
-        <p>Každý pes má rád jiné jídlo, ale existují některé oblíbené druhy, které jsou pro psy skvělé. Některé psy milují čerstvé maso, jiné zase suché granule. Ať už jde o psí pamlsky nebo hlavní jídlo, vždy je důležité zajistit, aby bylo jídlo vyvážené a zdravé.</p>
-        <p>Zde jsou obrázky psů, kteří si užívají své oblíbené jídlo!</p>
-    </div>
-
-    <div id="gallery" class="gallery">
-        <div>
-            <img src="https://bpfeshop.blob.core.windows.net/hpfconfiguratorimages/bpfeshop.blob.core.windows.net/cms/ContentItems/775_00775/m_max__w_1440__o/tumblr-inline-pfjuiwsh061vonki0-1280.jpeg" alt="Pes jí jablko">
-            <div class="caption">Pes jí jablko</div>
-            <div class="description">
-                Tento pes si opravdu užívá čerstvé jablko, které je pro něj nejen chutné, ale také zdravé. Jablka jsou skvělým pamlskem pro psy, protože obsahují vitamíny a vlákninu, která pomáhá při trávení. Mnoho psů miluje tento přírodní snack, ale je důležité, aby se odstraňovala jádra, protože mohou obsahovat toxiny.
-            </div>
+<main>
+    <section id="good-toys">
+        <h2>✅ Dobré hračky pro psy</h2>
+        <div class="toy">
+            <img src="https://cdn.myshoptet.com/usr/www.vsepropejska.cz/user/shop/big/2379_bea-gumova-kost-pro-psa-hracky-pro-psy-vsepropejska-cz.jpg?614aec65" alt="Gumová hračka">
+            <h3>Gumové hračky</h3>
+            <p>Odolné a bezpečné pro zuby. Skvělé pro žvýkání.</p>
         </div>
-        <div>
-            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSrg9AJwXIMA1qn7ynoXsZZQfFsuaGNzdYBvcXBG1RPOl4U3xf-vlQV6CzR2Lg70E3Ukneu2JQpp1cEeG6eyQDbXVAOX9xcpN1WN8gSvT7VH6PHR4i82_cShGSv" alt="Pes jí misku s granulemi">
-            <div class="caption">Pes jí granule</div>
-            <div class="description">
-                Tato miska je plná kvalitních granulí, které jsou navrženy pro zdraví psů. Granule jsou vyváženým jídlem pro každodenní stravu psa, protože obsahují všechny nezbytné živiny, vitamíny a minerály. Je důležité vybírat granule, které odpovídají věku a velikosti psa, aby byly co nejvíce přizpůsobené jeho potřebám.
-            </div>
+        <div class="toy">
+            <img src="https://media.zooplus.com/bilder/6/400/23058_pla_2in1doggybraintrainhundespielzeug_25cm_6.jpg" alt="Interaktivní hračka">
+            <h3>Interaktivní hračky</h3>
+            <p>Podporují mentální stimulaci a zlepšují poslušnost.</p>
         </div>
-        <div>
-            <img src="https://media.graphassets.com/resize=height:360,width:938/output=format:webp/0UOfVPwjSkWSPuk7Yf7x?width=938" alt="Pes jí čerstvé maso">
-            <div class="caption">Pes jí čerstvé maso</div>
-            <div class="description">
-                Čerstvé maso je skvělým zdrojem bílkovin pro psy. Tento pes si pochutnává na kuse masa, který je bohatý na živiny. Mnozí majitelé psů preferují krmení syrovým masem, protože je to přírodní a přirozená strava pro jejich mazlíčky. Důležité je však dbát na bezpečnost a vybírat maso, které je pro psa vhodné a nezpůsobí žádné zdravotní problémy.
-            </div>
+        <div class="toy">
+            <img src="https://cdn.myshoptet.com/usr/www.tailmate.cz/user/shop/big/56-4_rope-be-3.png?672cce2a" alt="Provazová hračka">
+            <h3>Provazové hračky</h3>
+            <p>Skvělé na přetahování a čištění zubů.</p>
         </div>
-    </div>
+    </section>
 
-    <footer id="footer">
-        <p>&copy; 2025 Psi a Jídlo. Pouze pro studijní účely.</p>
-    </footer>
+    <section id="bad-toys">
+        <h2>❌ Špatné hračky pro psy</h2>
+        <div class="toy">
+            <img src="https://media.zooplus.com/bilder/6/400/485517_wild_knots_bears_bra_6.jpg" alt="Plyšová hračka">
+            <h3>Plyšové hračky s výplní</h3>
+            <p>Snadno se roztrhají a mohou být nebezpečné při spolknutí.</p>
+        </div>
+        <div class="toy">
+            <img src="https://cdn.myshoptet.com/usr/www.happyzoo.cz/user/shop/big/74509-3_hracka-hiphop-latex-kachnicka-14cm.jpg?67c51a41" alt="Levná plastová hračka">
+            <h3>Levné plastové hračky</h3>
+            <p>Mohou obsahovat toxické látky a snadno se rozbijí.</p>
+        </div>
+        <div class="toy">
+            <img src="https://cdn.myshoptet.com/usr/www.akinu.cz/user/shop/big/18326_b8da5ad413371a94a4e77dd8a8404ad9.jpg?6405e10b" alt="Malá hračka">
+            <h3>Malé hračky</h3>
+            <p>Mohou představovat riziko udušení, zejména pro větší psy.</p>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>📢 Recenze majitelů psů</h2>
+        <div class="review">
+            <p>"Moje fenka Bella miluje gumové hračky! Jsou odolné a bezpečné." – <strong>Marie K.</strong></p>
+        </div>
+        <div class="review">
+            <p>"Koupil jsem levnou plastovou hračku a můj pes ji rozkousal za 5 minut. Už nikdy!" – <strong>Petr S.</strong></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Psí Hračky | Všechna práva vyhrazena</p>
+</footer>
+
 </body>
 </html>
