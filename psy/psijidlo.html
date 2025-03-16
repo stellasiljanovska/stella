@@ -34,7 +34,7 @@
 
         /* Styl pro sekce a nadpisy */
         #good-toys, #bad-toys {
-            text-align: left; /* Zarovnáme nadpisy vlevo */
+            text-align: left;
         }
 
         #good-toys h2, #bad-toys h2 {
@@ -43,33 +43,20 @@
         }
 
         #good-toys p, #bad-toys p {
-            text-align: justify; /* Zarovnáme texty popisů */
+            text-align: justify;
             margin-bottom: 10px;
         }
 
         .toy {
-            display: flex;
-            align-items: center;
             margin-bottom: 20px;
-        }
-
-        .toy img {
-            width: 120px;
-            height: 120px;
-            border-radius: 10px;
-            margin-right: 20px;
-        }
-
-        /* Úpravy pro obrázky v sekci Špatné hračky */
-        #bad-toys .toy {
-            display: block;
             text-align: center; /* Zarovnáme obrázky na střed */
         }
 
-        #bad-toys .toy img {
-            width: 200px; /* Upravíme velikost obrázků, pokud chcete */
+        .toy img {
+            width: 200px;
             height: auto;
-            margin: 10px auto; /* Přidáme mezery mezi obrázky */
+            border-radius: 10px;
+            margin-bottom: 10px; /* Mezera mezi obrázkem a textem */
         }
 
         .review {
@@ -122,7 +109,7 @@
             <p>Snadno se roztrhají a mohou být nebezpečné při spolknutí.</p>
         </div>
         <div class="toy">
-            <img src=https://cdn.myshoptet.com/usr/www.akinu.cz/user/shop/big/18974_5ab870a7e059803b2cb36ecc8ff78a4d.jpg?6407531a alt="Levná plastová hračka">
+            <img src="https://cdn.myshoptet.com/usr/www.akinu.cz/user/shop/big/18974_5ab870a7e059803b2cb36ecc8ff78a4d.jpg?6407531a" alt="Levná plastová hračka">
             <h3>Levné plastové hračky</h3>
             <p>Mohou obsahovat toxické látky a snadno se rozbijí.</p>
         </div>
