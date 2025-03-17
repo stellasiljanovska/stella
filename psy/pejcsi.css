@@ -59,6 +59,15 @@
             margin: 20px auto;
             max-width: 90%;  /* Ujistíme se, že obrázky nebudou příliš široké */
         }
+        #bad-toys {
+            display: flex;
+            flex-direction: column;  /* Text bude nad obrázky */
+            align-items: center;  /* Středování sekce */
+            gap: 20px;  /* Větší mezery mezi obrázky */
+            margin: 20px auto;
+            max-width: 90%;  /* Ujistíme se, že obrázky nebudou příliš široké */
+        }
+
 
         /* Styly pro kontejnery obrázků */
         .toys-container {
